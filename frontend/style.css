@@ -1,0 +1,71 @@
+/* Sayfanın genel body (tüm ekran) stilini ayarlıyoruz */
+body {
+    /* Yazı tipi (Google Font veya sistem fontu olabilir) */
+    font-family: Gloria Hallelujah;
+
+    /* Arka plan rengi (açık mavi ton) */
+    background: #f2f6ff;
+
+    /* Flexbox kullanarak içerikleri ortalama */
+    display: flex;
+
+    /* Yatayda ortala */
+    justify-content: center;
+
+    /* Dikeyde ortala */
+    align-items: center;
+
+    /* Sayfa yüksekliğini tam ekran yap (100% viewport height) */
+    height: 100vh;
+}
+
+/* Ana kutu (formun bulunduğu alan) */
+.container {
+    /* İçeriği ortala */
+    text-align: center;
+
+    /* Beyaz arka plan */
+    background: white;
+
+    /* İç boşluk (kutunun iç rahatlığı) */
+    padding: 30px;
+
+    /* Köşeleri yuvarla */
+    border-radius: 12px;
+
+    /* Hafif gölge ekle (3D görünüm verir) */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Kullanıcının yazı yazdığı input alanı */
+input {
+    /* İç boşluk */
+    padding: 10px;
+
+    /* Genişlik */
+    width: 250px;
+
+    /* Üstten boşluk */
+    margin-top: 10px;
+}
+
+/* Buton tasarımı */
+button {
+    /* İç boşluk */
+    padding: 10px 15px;
+
+    /* Soldan boşluk (input ile araya mesafe koyar) */
+    margin-left: 10px;
+
+    /* Üzerine gelince el işareti çıkar */
+    cursor: pointer;
+}
+
+/* Sonucun gösterildiği alan */
+#result {
+    /* Üstten boşluk */
+    margin-top: 20px;
+
+    /* Yazı büyüklüğü */
+    font-size: 18px;
+}

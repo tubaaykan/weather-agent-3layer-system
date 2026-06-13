@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Sayfanın başlık kısmı (tarayıcı sekmesinde görünür) -->
+  <title>Weather Agent</title>
+
+  <!-- CSS dosyasını bağlarız (sayfanın görünümünü düzenler) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Tüm içeriği ortalamak / düzenlemek için ana container -->
+  <div class="container">
+
+    <!-- Sayfa başlığı -->
+    <h1>🌦️ Weather Agent</h1>
+
+    <!-- Kullanıcının şehir/konum yazacağı input alanı -->
+    <!-- id="input" → JavaScript buradan veriyi alacak -->
+    <input id="input" placeholder="e.g. Tübingen weather" />
+
+    <!-- Buton: tıklanınca JavaScript içindeki getWeather() çalışır -->
+    <button onclick="getWeather()">Ask</button>
+
+    <!-- API'den gelen sonuçların gösterileceği alan -->
+    <div id="result"></div>
+
+  </div>
+
+  <!-- JavaScript dosyasını bağlarız -->
+  <!-- Burada API çağrıları ve getWeather() fonksiyonu olacak -->
+  <script src="app.js"></script>
+
+</body>
+</html>
