@@ -5,10 +5,9 @@ from .agent import process_request
 
 app = FastAPI()
 
-# CORS — tarayıcının isteği bloklamasını engeller
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],      # geliştirme için; prod'da domain yaz
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
